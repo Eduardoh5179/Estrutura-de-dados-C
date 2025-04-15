@@ -46,6 +46,23 @@ void bubbleSort2(){
     }
 }
 
+void bubbleSort3(){
+    int n = 1, troca = 1, x;
+    
+    while(n<=TAM && troca == 1){
+        troca = 0;
+        
+        for(int i = 0;i<TAM-1;i++){
+            if(arr[i] > arr[i+1]){
+                x = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = x;
+                troca = 1;
+            }
+        }
+    }
+}
+
 int main()
 {
     randomArr();
