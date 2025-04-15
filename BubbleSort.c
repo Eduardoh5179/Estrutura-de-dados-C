@@ -67,5 +67,7 @@ int main()
 {
     randomArr();
     bubbleSort();
+    //bubbleSort2();
+    //bubbleSort3();
     printArr();
 }
