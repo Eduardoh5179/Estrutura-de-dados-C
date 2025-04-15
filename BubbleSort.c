@@ -33,6 +33,19 @@ void bubbleSort(){
     }
 }
 
+void bubbleSort2(){
+    int i,j;
+    for (i = 1; i <= TAM-1; i++) {
+        for (j=TAM-1; j>=i; j--) {
+            if(arr[j]<arr[j-1]){
+                int x = arr[j];
+                arr[j] = arr[j-1];
+                arr[j-1] = x;
+            }
+        }
+    }
+}
+
 int main()
 {
     randomArr();
