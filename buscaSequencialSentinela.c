@@ -5,16 +5,6 @@
 
 int arr[TAM + 1];
 
-int randomArr(){
-    int i;
-    srand(97);
-    for(i=0;i<TAM;i++){
-        arr[i] = rand() % (TAM * 10);
-    }
-    
-    return arr[TAM];
-}
-
 void printArr(){
     int i;
     for(i=0;i<TAM;i++){
