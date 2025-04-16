@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 #define TAM 10
 
 int arr[TAM + 1];
