@@ -47,9 +47,9 @@ void bubbleSort2(){
 }
 
 void bubbleSort3(){
-    int n = 1, troca = 1, x;
+    int troca = 1, x;
     
-    while(n<=TAM && troca == 1){
+    while(troca == 1){
         troca = 0;
         
         for(int i = 0;i<TAM-1;i++){
