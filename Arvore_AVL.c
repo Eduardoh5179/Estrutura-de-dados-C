@@ -139,7 +139,7 @@ void insere_bal(int chave){
 
 void em_ordem(struct no *raiz){
     if(raiz!=NULL){
-        printf("Visitando: %d (%p)\n",raiz->dado, (void*)raiz);
+        printf("Visitando: %d ",raiz->dado);
         em_ordem(raiz->esq);
         em_ordem(raiz->dir);
     }
