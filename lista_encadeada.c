@@ -8,7 +8,6 @@ typedef struct aluno{
     int idade;
     char RA[8];
     struct aluno* proximo;
-    /*ponteiro que aponta pro hexadecimal do local da memoria RAM do proximo item da lista*/
 }aluno;
 
 
@@ -20,9 +19,7 @@ aluno* criar_aluno(char nome[50], int idade, char RA[9]){
     
     if (dado != NULL)
     {
-    /*usa strcpy por ser string*/
     strcpy(dado->nome, nome);
-    /*acessa o campo idade com os parametros passados*/
     dado ->idade = idade;
     strcpy(dado->RA, RA);
     dado->proximo= NULL;
@@ -45,7 +42,6 @@ void inserir_final_lista(aluno* dado){
 
 }
 void inserir_lista_vazia(aluno* dado){
-    /*coloca o dado como a raiz da lista*/
     raiz = dado;
     return;
 }
